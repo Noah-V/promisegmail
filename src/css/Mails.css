@@ -1,0 +1,47 @@
+.mails-et-mailContent{
+  flex: 1;
+}
+.mails-et-mailContent-main{
+  display: flex;
+}
+.mails{
+
+    display: flex;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: whitesmoke;
+    border-radius: 20px;
+    align-items: flex-start;
+    overflow: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+
+}
+.mailContent{
+  /* flex: 1; */
+}
+.mails::-webkit-scrollbar{
+    display: none;
+}
+.search-bar{
+    margin-top: 20px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+    background-color: rgb(233, 229, 229);
+    color: white;
+  }
+  .search-div{
+    width: 90%;
+    position: relative;
+    margin-bottom: 20px;
+  }
+  .fa-magnifying-glass{
+    position: absolute;
+    left: 350px;
+    top: 29px;
+  }

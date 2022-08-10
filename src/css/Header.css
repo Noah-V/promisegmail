@@ -1,0 +1,15 @@
+.header{
+    display: flex;
+}
+.appLabel{
+    display: flex;
+    justify-content: space-around;
+}
+
+.appLabel img{
+    object-fit: contain;
+    height: 85px;
+}
+.menu{
+    align-self: center;
+}

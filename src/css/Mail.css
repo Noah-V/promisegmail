@@ -1,0 +1,43 @@
+.mail{
+    width: 90%;
+    display: grid;
+    grid-template-columns: 10% 90%;
+    height: 70px;
+    margin-bottom: 10px;
+    /* padding: 10px; */
+    margin-top: 10px;
+    margin-right: 0;
+    justify-content: start;
+    align-content: center;
+  }
+  .mail-active{
+    background-color: white;
+    border-radius: 20px;
+  }
+  .mail:hover{
+    color: green;
+    cursor: pointer;
+    background-color: rgb(243, 239, 239);
+    border-radius: 20px;
+  }
+  .mail .pfp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+  }
+  .mail .pfp img{
+    height: 50%;
+    border-radius: 50%;
+  }
+  .mail-synopsis{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 5px;
+  }
+  .mail-synopsis > *{
+    margin: 0;
+  }
+  
+  
