@@ -12,9 +12,9 @@ function App() {
   return (
     <div className="App">
       <Container/>
-      <Routes>
+      {/* <Routes>
         <Route path='*' element={<Mails/>}/>
-      </Routes>
+      </Routes> */}
     </div>
   );
 }

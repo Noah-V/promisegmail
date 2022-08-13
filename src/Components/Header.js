@@ -3,6 +3,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import { IconButton } from '@mui/material';
 import '../css/Header.css';
 import Mailbox from './Mailbox';
+import Mails from './Mails';
 
 function Header() {
 
@@ -33,6 +34,7 @@ function Header() {
             </div>
             <div className='body'>
                 <Mailbox/>
+                <Mails/>
             </div>
         </div>
     )
