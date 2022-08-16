@@ -1,6 +1,7 @@
 .mails-et-mailContent{
   flex: 1;
   max-height: 700px;
+  position: relative;
 }
 .mails-et-mailContent-main{
   display: flex;

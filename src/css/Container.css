@@ -11,3 +11,24 @@
     flex-direction: row;
     height: 650px;
 }
+.compose{
+    position: fixed;
+    /* float: right; */
+    bottom: 50px;
+    right: 620px;
+    cursor: pointer;
+    border-radius: 50%; 
+    background-color: #fff;
+    transition: all 0.2s ease-in-out;
+  }
+  .compose:hover{
+    transform: scale(0.7);
+    /* transition: scale 5s; */
+  }
+  .compose > img{
+    padding: 10px;
+    border-radius: 50%;
+  }
+  .compose > img:hover{
+    filter: invert(1);
+  }

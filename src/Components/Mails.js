@@ -4,6 +4,7 @@ import '../css/Mails.css'
 import { Route, Routes } from 'react-router-dom'
 import MailContent from './MailContent'
 import { style } from '@mui/system'
+
 function Mails() {
 
   const [shrinkMail, setShrinkMail] = React.useState(false);
@@ -52,7 +53,7 @@ function Mails() {
             synopsis="Who givessss"
             selected={selected}
             // handleSelected={ifSelected}
-          />  
+          />
         </div>
         <div className='mailContent' id='mailContent'>
           <Routes>
