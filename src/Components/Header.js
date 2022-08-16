@@ -10,7 +10,9 @@ function Header() {
 
     const shrinkMailBoxes = ()=> {
         var mailMenu = document.getElementById('mailbox');
+        var mailMenuContainer = document.getElementById('mailbox-container')
         mailMenu.classList.toggle("shrinkMailBox"); 
+        mailMenuContainer.classList.toggle("shrinkMailBox-container");
     }
 
     
@@ -31,10 +33,6 @@ function Header() {
                     <input type="search" name="" placeholder="Search" id="" className="search-bar"/>
                     <i className="fa-solid fa-magnifying-glass"></i>
                 </div>
-            </div>
-            <div className='body'>
-                <Mailbox/>
-                <Mails/>
             </div>
         </div>
     )

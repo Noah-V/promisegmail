@@ -9,6 +9,10 @@ function Container() {
   return (
     <div className='container'>
         <Header/>
+        <div className='body'>
+            <Mailbox/>
+            <Mails/>
+        </div>
     </div>
   )
 }

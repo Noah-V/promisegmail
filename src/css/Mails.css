@@ -1,8 +1,16 @@
 .mails-et-mailContent{
   flex: 1;
+  max-height: 700px;
 }
 .mails-et-mailContent-main{
   display: flex;
+  min-height: 100%;
+  overflow: scroll;
+  -ms-overflow-style: none;
+}
+
+.mails-et-mailContent-main::-webkit-scrollbar{
+  display: none;
 }
 .mails{
 
@@ -10,7 +18,6 @@
     flex: 1;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     background-color: whitesmoke;
     border-radius: 20px;
     align-items: flex-start;

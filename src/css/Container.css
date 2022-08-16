@@ -1,3 +1,6 @@
+.container{
+    height: 91vh;
+}
 .header{
     display: flex;
     align-content: center;
@@ -6,4 +9,5 @@
 .body{
     display: flex;
     flex-direction: row;
+    height: 650px;
 }

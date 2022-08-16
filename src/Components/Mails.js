@@ -47,54 +47,6 @@ function Mails() {
     <div className="mails-et-mailContent">
       <div className='mails-et-mailContent-main'>
         <div className="mails mails-active" id='mails' onClick={shrinkMail && ifMailSelected}>
-          {/* {mails.map(mail => (
-            <Mail
-              sender="Jessica"
-              synopsis="Who givessss"
-              selected={selected}
-              handleSelected={ifSelected}
-            />
-          ))} */}
-          <Mail
-            sender="Jessica"
-            synopsis="Who givessss"
-            selected={selected}
-            handleSelected={ifSelected}
-          />
-          <Mail
-            sender="Jessica"
-            synopsis="Who givessss"
-            selected={selected} 
-            handleSelected={ifSelected}
-          />
-          <Mail
-            sender="Jessica"
-            synopsis="Who givessss"
-            selected={selected}
-            // handleSelected={ifSelected}
-            
-          />
-          <Mail
-            sender="Jessica"
-            synopsis="Who givessss"
-            // selected={selected}
-            // handleSelected={ifSelected}
-            
-          />
-          <Mail
-            sender="Jessica"
-            synopsis="Who givessss"
-            selected={selected}
-            // handleSelected={ifSelected}
-            
-          />
-          <Mail
-            sender="Jessica"
-            synopsis="Who givessss"
-            selected={selected}
-            // handleSelected={ifSelected}
-            
-          />
           <Mail
             sender="Jessica"
             synopsis="Who givessss"
