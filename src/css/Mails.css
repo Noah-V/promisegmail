@@ -33,3 +33,93 @@
 .mails::-webkit-scrollbar{
     display: none;
 }
+.accordRight{
+  display: flex;
+  align-items: center;
+  flex: 0.4;
+}
+.accordRight > .MuiSvgIcon-root{
+  margin-left: 5px;
+}
+
+.accordMid{
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.accord-mid-main{
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.MuiPaper-root{
+  color: rgb(0, 0, 0) !important;
+  border-bottom: 1px solid #aaa;
+  /* background-color: #000 !important; */
+  opacity: 0.8;
+}
+
+/* @supports(-webkit-backdrop-filter: none){
+  .MuiPaper-root{
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+} */
+
+.accordion-details{
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  background-color: white;
+}
+.accordion-details-top{
+  display: flex;
+  align-items: center;
+}
+.accordion-details-top > p{
+  font-weight: 500;
+  margin: 10px 60px;
+}
+.accord-details-top-right{
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+.accord-details-info{
+  display: flex;
+  margin-left: 10px;
+  align-items: center;
+}
+.sender-info{
+  font-size: 1.1rem;
+}
+.sender-info > h4 > small{
+  color: rgb(42, 42, 42);
+  margin-left: 5px;
+  font-weight: normal;
+}
+.sender-info-date{
+  margin-right: 10px;
+  display: flex;
+}
+.sender-info-date-option{
+  display: flex;
+}
+.sender-info-date-option > .MuiSvgIcon-root{
+  color: black;
+  margin-left: 10px;
+}
+.mail-content{
+  margin-top: 10px;
+  border-top: 1px solid rgba(0, 0, 0, 0.253);
+  margin-left: 10px;
+}
+.mail-content-accordion{
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  flex: 1;
+}
