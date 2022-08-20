@@ -9,8 +9,14 @@ import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import { Checkbox } from '@mui/material'
+import { Avatar, Checkbox } from '@mui/material'
 import Star from '@mui/icons-material/Star'
+import PrintIcon from '@mui/icons-material/Print';
+import LaunchIcon from '@mui/icons-material/Launch';
+import StarIcon from '@mui/icons-material/Star';
+import ReplyIcon from '@mui/icons-material/Reply';
+import Reply from '@mui/icons-material/Reply'
+import MoreVert from '@mui/icons-material/MoreVert'
 
 function SimpleAccordion() {
   return (
@@ -26,17 +32,54 @@ function SimpleAccordion() {
               <Checkbox/>
               <Star/>
               <Typography>
-                
+                Username
+              </Typography>
+            </div>
+            <div className="accord-mid-Main">
+              <Typography>
+                Subject
+              </Typography>
+              <p>Click here to see content</p>
+            </div>
+            <div className="accord-mid-date">
+              <Typography>
+                TimeStamp
               </Typography>
             </div>
           </div>
           <Typography>Accordion 1</Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <Typography>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            malesuada lacus ex, sit amet blandit leo lobortis eget.
-          </Typography>
+          <div className="accordion-details">
+            <div className="accordion-details-top">
+              <p>Subject</p>
+              <div className="accord-details-top-right">
+                <PrintIcon/>
+                <LaunchIcon/>
+              </div>
+            </div>
+            <div className="accord-details-info">
+              <Avatar/>
+              <div className="sender-info">
+                <h4>Sender Name<small>Email</small></h4>
+                <small>To Mail</small>
+              </div>
+              <div className="sender-info-date">
+                <div className="sender-info-date-option">
+                  <small>Timestamp</small>
+                  <StarIcon/>
+                  <ReplyIcon/>
+                  <MoreVert/>
+                </div>
+              </div>
+            </div>
+            <div className="mail-content">
+              <div className="mail-content-accordion">
+              </div>
+              <ReplyMails/>
+              <ForwardMails/>
+            </div>
+          </div>
         </AccordionDetails>
       </Accordion>
       <Accordion>
@@ -58,17 +101,18 @@ function SimpleAccordion() {
   );
 }
 
+const ReplyMails = ()=> {
+
+}
+
+const ForwardMails = ()=> {
+
+}
 
 function Mails() {
 
   const [shrinkMail, setShrinkMail] = React.useState(false);
   const [selected, setSelected] = React.useState(false);
-  // console.log(selected)
-
-  const ifSelected = ()=> {
-    setSelected(!selected)
-    // console.log(selected)
-  }
 
   const ifMailSelected = ()=> {
     console.log(shrinkMail)
@@ -83,21 +127,6 @@ function Mails() {
     console.log(shrinkMail)
   }
 
-  // const [mails, setMails] = React.useState([]);
-
-  // const getEmails = ()=> {
-  //   setMails(
-  //     {
-  //       id: Math.floor(Math.random() + 1),
-  //       message: ""
-  //     }
-  //   )
-  // }
-
-  const expandMails = ()=> {
-    
-  }
-
   return (
     <div className="mails-et-mailContent">
       <div className='mails-et-mailContent-main'>
@@ -106,9 +135,8 @@ function Mails() {
             sender="Jessica"
             synopsis="Who givessss"
             selected={selected}
-            // handleSelected={ifSelected}
           />
-           <SimpleAccordion/>
+          <SimpleAccordion/>
         </div>
         <div className='mailContent' id='mailContent'>
           <Routes>
